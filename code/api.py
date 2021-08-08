@@ -5,7 +5,7 @@ from flask import request, jsonify
 from werkzeug.utils import secure_filename
 from flask import Flask
 
-from db_functions import DBConnection
+from database.db_functions import DBConnection
 from main import LoadData
 
 UPLOAD_FOLDER = os.getcwd() + '/uploads'
@@ -22,7 +22,7 @@ def allowed_file(filename):
 
 
 def get_config():
-    with open('config.json', 'r') as f:
+    with open(os.getcwd() + 'code/database/config.json', 'r') as f:
         config = json.load(f)
     return config
 

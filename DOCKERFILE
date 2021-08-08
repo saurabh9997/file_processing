@@ -1,7 +1,0 @@
-FROM python:3.9.3
-COPY /Users/saurabhjha/PycharmProjects/postman/file_processing
-WORKDIR /file_processing
-RUN pip3 --no-cache-dir install -r requirements.txt
-EXPOSE 8091
-ENTRYPOINT ["python3"]
-CMD ["code/api.py"]

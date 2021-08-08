@@ -1,8 +1,0 @@
-{
-  "postgres": {
-    "host": "localhost",
-    "user": "postgres",
-    "passwd": "S@jha1234",
-    "db": "postman"
-  }
-}
